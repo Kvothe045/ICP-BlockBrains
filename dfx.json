@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "BlockBrains_backend": {
+      "main": "src/BlockBrains_backend/main.mo",
+      "type": "motoko"
+    },
+    "BlockBrains_frontend": {
+      "dependencies": [
+        "BlockBrains_backend"
+      ],
+      "source": [
+        "src/BlockBrains_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "BlockBrains_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
